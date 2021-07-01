@@ -4,12 +4,13 @@ import { Field, ID, ObjectType } from "type-graphql";
 export class Author {
   @Field(() => ID)
   id: string;
-  
+
   @Field(() => String, { description: "Author's first and last name" })
   name: string;
 
-  @Field(() => String, { 
+  @Field(() => String, {
     nullable: true,
-    description: "Author's profile picture" })
+    description: "Author's profile picture",
+  })
   photo?: string;
 }

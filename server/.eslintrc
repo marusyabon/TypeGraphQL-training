@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "@curve-technology/eslint-config-curve/node",
+    "plugin:unicorn/recommended",
+  "plugin:ordered-imports/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
